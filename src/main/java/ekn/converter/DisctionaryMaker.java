@@ -17,6 +17,7 @@ public class DisctionaryMaker {
 
     String createTableDictionary = "create table  Dictionary (id int primary key, lang varchar2(3) ,phrase varchar2(2048) )";
     String createTabledeutschDictionary = "create table deutschDictionary (id int primary key, phrase varchar2(2048) )";
+
     String createTablerussianDictionary = "create table russianDictionary (id int primary key, phrase varchar2(2048) )";
     String createTableLinks = "create table links (id1 int  , id2 int )";
     String createTablerusdeu = "create table rusdeudictionary (id int primary key, deutschphrase varchar2(2048), russianphrase varchar2(2048) )";
@@ -124,7 +125,7 @@ public class DisctionaryMaker {
     }
 
     public void parseSentensesToDictionary() {
-        Logger.debug("IN:parseSentensesToDictionary");
+        Logger.debug("IN:parseSentensesTop;Dictionary");
 
         String fileName = "D:/Projects/Tatoeba/sentences/sentences.csv";
         Stream<String> stream = null;
